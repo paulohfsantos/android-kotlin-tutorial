@@ -4,6 +4,7 @@
     <string name="btn_text">click here</string>
     <string name="upgrade_me">upgrade me</string>
     <string name="input_name">Enter your name here:</string>
-    <string name="show">show</string>
+    <string name="show_btn">show</string>
     <string name="name">Name</string>
+    <string name="text_shown">text_shown</string>
 </resources>
