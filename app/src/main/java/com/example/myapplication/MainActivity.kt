@@ -37,7 +37,7 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this@MainActivity, "text changed", Toast.LENGTH_LONG).show()
         }
 
-        // set button an click eventListener
+//         set button an click eventListener
 //        btnClickMe.setOnClickListener {
 //            val str = textChanged.text.toString().contains("good morning")
 //
