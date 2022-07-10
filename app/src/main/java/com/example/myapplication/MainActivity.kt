@@ -3,13 +3,13 @@ package com.example.myapplication
 import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import android.widget.TextView
+import android.content.Intent
 
-class MainActivity : AppCompatActivity() {
+class MainActivity: AppCompatActivity() {
     @SuppressLint("SetTextI18n")
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -24,8 +24,15 @@ class MainActivity : AppCompatActivity() {
         val upgradeBtn = findViewById<Button>(R.id.click_me_two)
         val shownTxt = findViewById<TextView>(R.id.text_shown)
         val inputVal = findViewById<EditText>(R.id.editText)
+        val btn = findViewById<Button>(R.id.click_me_three)
 
         var count = 0
+
+        btn.setOnClickListener {
+            val intent = Intent(this, Page2::class.java)
+            startActivity(intent)
+            finish()
+        }
 
         upgradeBtn.setOnClickListener {
             count++
